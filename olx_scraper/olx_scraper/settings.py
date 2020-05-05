@@ -30,14 +30,14 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#     'olx_scraper.pipelines.MongoDBPipeline': 300,
-#}
+ITEM_PIPELINES = {
+     'olx_scraper.pipelines.MongoDBPipeline': 300,
+}
 #--------------------MONGODB CONFIG ---------------------------------------
-#MONGODB_SERVER = "localhost"
-#MONGODB_PORT = 27017
-#MONGODB_DB = ""
-#MONGODB_COLLECTION = ""
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 27017
+MONGODB_DB = "olx_test.db"
+MONGODB_COLLECTION = "test"
 
 #--------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ ROBOTSTXT_OBEY = False
 
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 5
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay

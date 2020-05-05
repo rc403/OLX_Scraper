@@ -1,9 +1,9 @@
 def info(string):
 	if string.lower() == 'city':
-		return 'lahore'
+		return 'warszawa'
 	elif string.lower() == 'product':
-		return 'iphone'
+		return 'mieszkanie'
 	elif string.lower() == 'minimumprice':
-		return '25000'
+		return '125000'
 	else:
 		return ''

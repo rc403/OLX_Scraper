@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from olx_scraper.args import info
+from args import info
 from scrapy.http import Request
 from datetime import date
 from scrapy.selector import Selector
@@ -39,7 +39,7 @@ def month2num(month):
 '''
 class ScraperSpider(scrapy.Spider):
     name = 'scrape_olx'
-    start_urls = ['https://www.olx.com/']
+    start_urls = ['https://www.olx.pl/nieruchomosci/mieszkania/']
     def __init__(self):
         self.d = date.today()
         self.min_price = 0

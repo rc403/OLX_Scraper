@@ -6,7 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 from pymongo import MongoClient
-from scrapy.conf import settings
+from scrapy import settings
 
 class MongoDBPipeline(object):
 
